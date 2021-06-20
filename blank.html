@@ -5,6 +5,8 @@
    <meta charset="utf-8">
    <title>HTML Academy: Техномарт</title>
    <link rel="icon" href="favicon.ico">
+   <link href="css/normalize/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,31 +29,31 @@
             <a href="blank.html">Оформить заказ</a>
          </div>
       </div>
-      <div class="main-header-middle">
+      <div class="main-header-container">
          <p class="main-header-description">
             Интернет-магазин строительных материалов и инструментов для ремонта
          </p>
          <div>
             <a class="header-telephone" href="tel:+7(800)555-86-28">+7(800)555-86-28</a>
          </div>
-         <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+         <address class="header-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
          <section class="header-authorization">
             <h3>Авторизация</h3>
             <a class="sign-in" href="blank.html">Войти</a>
             <a class="sing-up" href="blank.html">Регистрация</a>
          </section>
+         <nav class="main-navigation">
+            <ul class="site-navigation">
+               <li><a>Главная</a></li>
+               <li><a href="blank.html">Компания</a></li>
+               <li><a href="catalog.html">Каталог</a></li>
+               <li><a href="blank.html">Новости</a></li>
+               <li><a href="blank.html">Спецпредложения</a></li>
+               <li><a href="blank.html">Доставка</a></li>
+               <li><a href="blank.html">Контакты</a></li>
+            </ul>
+         </nav>
       </div>
-      <nav class="main-navigation">
-         <ul class="site-navigation">
-            <li><a>Главная</a></li>
-            <li><a href="blank.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="blank.html">Новости</a></li>
-            <li><a href="blank.html">Спецпредложения</a></li>
-            <li><a href="blank.html">Доставка</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-         </ul>
-      </nav>
    </header>
    <main class="container">
       <h1>Пустая страница</h1>
@@ -59,7 +61,7 @@
    <footer class="main-footer">
       <div class="footer-top">
          <div class="footer-row-1">
-            <a class="main-footer-logo">
+            <a class="footer-main-logo">
                <img src="img/logo-technomart-footer.svg" width="138" height="23" alt="Логотип техномарта">
             </a>
             <ul class="footer-navigation list-top">
