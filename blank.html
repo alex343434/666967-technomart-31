@@ -9,50 +9,60 @@
    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
    <header class="main-header">
       <div class="main-header-top">
-         <a class="main-header-logo">
-            <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип техномарта">
-         </a>
-         <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
-            <label for="search-field">Поиск</label>
-            <input class="form-search-field" id="search-field" type="search" name="search">
-         </form>
-         <div class="bookmarks">
-            Закладки: <span>0</span>
-         </div>
-         <div class="basket">
-            Корзина: <span>0</span>
-         </div>
-         <div class="place-order">
-            <a href="blank.html">Оформить заказ</a>
+         <div class="container">
+            <div class="header-top-grid">
+               <a class="main-header-logo">
+                  <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип техномарта">
+               </a>
+               <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
+                  <label for="search-field">Поиск:</label>
+                  <input class="form-search-field" id="search-field" type="search" name="search">
+               </form>
+               <div class="bookmarks">
+                  Закладки: <span>0</span>
+               </div>
+               <div class="basket">
+                  Корзина: <span>0</span>
+               </div>
+               <div class="place-order">
+                  <a href="blank.html">Оформить заказ</a>
+               </div>
+            </div>
          </div>
       </div>
-      <div class="main-header-container">
-         <p class="main-header-description">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-         </p>
-         <div>
-            <a class="header-telephone" href="tel:+7(800)555-86-28">+7(800)555-86-28</a>
+      <div class="main-header-wrapper">
+         <div class="container middle-rows">
+            <div class="header-middle-grid">
+               <p class="main-header-description">
+                  Интернет-магазин строительных материалов и инструментов для ремонта
+               </p>
+               <div class="header-block">
+                  <div>
+                     <a class="header-telephone" href="tel:+7(800)555-86-28">+7(800)555-86-28</a>
+                  </div>
+                  <address class="header-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+               </div>
+               <section class="header-authorization">
+                  <h3>Авторизация</h3>
+                  <a class="sign-in" href="blank.html">Войти</a>
+                  <a class="sing-up" href="blank.html">Регистрация</a>
+               </section>
+            </div>
+            <nav class="main-navigation">
+               <ul class="site-navigation">
+                  <li><a>Главная</a></li>
+                  <li><a href="blank.html">Компания</a></li>
+                  <li><a href="catalog.html">Каталог</a></li>
+                  <li><a href="blank.html">Новости</a></li>
+                  <li><a href="blank.html">Спецпредложения</a></li>
+                  <li><a href="blank.html">Доставка</a></li>
+                  <li><a href="blank.html">Контакты</a></li>
+               </ul>
+            </nav>
          </div>
-         <address class="header-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-         <section class="header-authorization">
-            <h3>Авторизация</h3>
-            <a class="sign-in" href="blank.html">Войти</a>
-            <a class="sing-up" href="blank.html">Регистрация</a>
-         </section>
-         <nav class="main-navigation">
-            <ul class="site-navigation">
-               <li><a>Главная</a></li>
-               <li><a href="blank.html">Компания</a></li>
-               <li><a href="catalog.html">Каталог</a></li>
-               <li><a href="blank.html">Новости</a></li>
-               <li><a href="blank.html">Спецпредложения</a></li>
-               <li><a href="blank.html">Доставка</a></li>
-               <li><a href="blank.html">Контакты</a></li>
-            </ul>
-         </nav>
       </div>
    </header>
    <main class="container">
@@ -60,7 +70,7 @@
    </main>
    <footer class="main-footer">
       <div class="footer-top">
-         <div class="footer-row-1">
+         <div class="footer-row-1 container">
             <a class="footer-main-logo">
                <img src="img/logo-technomart-footer.svg" width="138" height="23" alt="Логотип техномарта">
             </a>
@@ -72,9 +82,9 @@
                <li><a href="blank.html">Контакты</a></li>
             </ul>
          </div>
-         <div class="footer-row-2">
+         <div class="footer-row-2 container">
             <address>
-               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
+               г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
                <a href="tel:+7(800)555-86-28">+7(800)555-86-28</a>
             </address>
             <ul class="footer-navigation list-bottom">
@@ -85,35 +95,37 @@
             </ul>
          </div>
       </div>
-      <div class="footer-bottom">
-         <section class="copyright">
-            <h3>Копирайт</h3>
-            <p>
-               ©2010–2021 Компания «Техномарт» Все права защищены
+      <div class="footer-wrapper">
+         <div class="footer-bottom container">
+            <section class="copyright">
+               <h3>Копирайт</h3>
+               <p>
+                  ©2010–2021 Компания «Техномарт» Все права защищены
+               </p>
+            </section>
+            <section class="footer-social">
+               <h3>Давайте дружить!</h3>
+               <ul class="social-list">
+                  <li>
+                     <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">Вконтакте</a>
+                  </li>
+                  <li>
+                     <a class="social-button" href="https://www.facebook.com/htmlacademy/" target="_blank">Facebook</a>
+                  </li>
+                  <li>
+                     <a class="social-button" href="https://www.instagram.com/htmlacademy" target="_blank">Instagram</a>
+                  </li>
+               </ul>
+            </section>
+            <p class="footer-feedback">
+               Обратная связь:<br>
+               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-         </section>
-         <section class="footer-social">
-            <h3>Давайте дружить!</h3>
-            <ul>
-               <li>
-                  <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">Вконтакте</a>
-               </li>
-               <li>
-                  <a class="social-button" href="https://www.facebook.com/htmlacademy/" target="_blank">Facebook</a>
-               </li>
-               <li>
-                  <a class="social-button" href="https://www.instagram.com/htmlacademy" target="_blank">Instagram</a>
-               </li>
-            </ul>
-         </section>
-         <p class="footer-feedback">
-            Обратная связь:
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-         </p>
-         <p class="footer-developed">
-            Разработано -
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">https://htmlacademy.ru/</a>
-         </p>
+            <p class="footer-developed">
+               Разработано -<br>
+               <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">https://htmlacademy.ru/</a>
+            </p>
+         </div>
       </div>
    </footer>
 </body>

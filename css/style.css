@@ -278,6 +278,17 @@
    background-color: var(--white);
 }
 
+.header-user-block {
+   display: flex;
+   justify-content: space-around;
+}
+
+.user-link-list {
+   display: flex;
+   justify-content: space-around;
+   margin: 0;
+   padding: 0;
+}
 .user-link-list a:hover {
    color: var(--basic-red);
    text-decoration: none;
@@ -647,6 +658,16 @@
 
 /* Breadcrumbs */
 
+.breadcrumbs-list {
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.breadcrumbs-list li {
+   margin-right: 15px;
+}
+
 .breadcrumbs a {
    font-family: PT Sans;
    color: var(--black);
@@ -661,7 +682,35 @@
    background-color: #F1F5F7;
 }
 
+/* Catalog columns */
+
+.catalog-columns {
+   display: grid;
+   grid-template-columns: min-content 1fr;
+}
+
+.catalog-column-right {
+   order: 2;
+}
+
+/*Catalog cards */
+
+.cards-list {
+   display: grid;
+   grid-template-columns: 220px 220px 220px;
+   grid-template-rows: 318px;
+}
+
 /* Catalog-sorting */
+
+.catalog-sorting {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.sorting-list {
+   display: flex;
+}
 
 .catalog-sorting,
 .sorting-button {
@@ -734,6 +783,16 @@
 
 /* Catalog-pagination */
 
+.pagination-list {
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+.catalog-pagination-block {
+   display: flex;
+}
+
 .pagination-list a {
    display: block;
    width: 38px;
@@ -754,7 +813,7 @@
 
 /* Catalog-about-tools */
 
-.about-tools {
+.about-tools-wrapper {
    background-color: #F1F5F7;
 }
 
