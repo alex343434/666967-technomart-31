@@ -705,11 +705,22 @@
 
 .catalog-sorting {
    display: flex;
-   flex-wrap: wrap;
+}
+
+.catalog-sorting h3 {
+   margin: 0;
+   padding-top: 10px;
+   padding-right: 19px;
+   padding-bottom: 10px;
+   padding-left: 19px;
+   width: 81px;
 }
 
 .sorting-list {
+   margin: 0;
+   padding-top: 3px;
    display: flex;
+   flex-wrap: wrap;
 }
 
 .catalog-sorting,
@@ -925,4 +936,121 @@
 
 .social-list {
    display: flex;
+}
+
+/****************** Modal window *********************/
+
+.modal {
+   font-family: Cuprum;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 24px;
+   width: 620px;
+   min-height: 430px;
+   box-sizing: border-box;
+   padding-top: 46px;
+   padding-left: 80px;
+   padding-right: 80px;
+   border-top: 7px solid var(--basic-red);
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal p {
+   margin: 0;
+   padding: 0;
+}
+
+.form-top-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 37px;
+}
+
+.modal-form label {
+   display: block;
+   margin: 0;
+   padding: 0;
+   margin-top: 13px;
+   margin-bottom: 11px;
+}
+
+.modal-form input[type="text"] {
+   min-width: 220px;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 24px;
+   color: #A9A9A9;
+   border: 2px solid #C5C5C5;
+   border-radius: 2px;
+}
+
+.form-top-wrapper p:last-child {
+   flex-grow: 1;
+}
+
+.form-top-wrapper textarea {
+   padding: 0;
+   width: 100%;
+   min-height: 114px;
+   font-family: PT Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 24px;
+   color: #A9A9A9;
+   resize: none;
+   border: 2px solid #C5C5C5;
+   border-radius: 2px;
+}
+
+.form-bottom-wrapper {
+   background-color: #F4F4F4;
+   padding: 37px 80px;
+}
+
+.form-bottom-wrapper input {
+   width: 100%;
+}
+
+/* Modal-busket */
+
+.modal-busket {
+   width: 620px;
+   height: 282px;
+   box-sizing: border-box;
+   border-top: 7px solid var(--basic-red);
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-busket h3 {
+   margin-top: 73px;
+   margin-bottom: 63px;
+   font-family: Cuprum;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-busket-wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 37px;
+   padding-bottom: 37px;
+   font-family: Cuprum;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+   background-color: #F1F1F1;
+   padding-left: 100px;
+   padding-right: 100px;
 }
